@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_SUNETRA BANERJEE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6dca06032f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3>Sunetra Banerjee</h3>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>                        
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-solid fa-circle-xmark" style="color: #b788f2;" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" style="color: #b497f7;" onclick="openmenu()"></i>                
+            </nav>
+        
+            <div class="leftsection">
+                Hi, I'm <span class="purple">Sunetra Banerjee</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+    
+            </div>
+        </div>
+    
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Engineer','Web Developer', 'Android Developer','Machine Learning enthusiast'],
+          typeSpeed: 50,
+        });
+      </script>
+
+    </div>
+    
+
+    <!----------------------About section-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a final year student at Heritage Institute of Technology, Kolkata, with a strong skill set in Android development, Web development and a growing interest in machine learning and deep learning. I am eager to continue learning and expanding my knowledge in the field of machine learning and deep learning. As a self-motivated individual, I am committed to producing high-quality work and contributing positively to any team or project.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('Education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Kotlin</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Android Studio</li>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>June 2023- July 2023</span><br>NIT Durgapur (Summer Research Intern)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024(expected)</span><br>B.Tech from Heritage Institute of Technology, Kolkata</li>
+                            <li><span>2020</span><br>AISSCE(Class XII) from DAV Model School, Durgapur</li>
+                            <li><span>2018</span><br>ICSE(Class X)from St. Peter's School, Durgapur</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-----------------------------Projects Section------------------------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="resize" src="images/ml project.jpg">
+                    <div class="layer">
+                        <h3>Brain Tumor Detection</h3>
+                        <p>A deep learning based project that uses MRI scan images to detect the presence of tumor in human brain.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #a7a6f7;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="resize" src="images/android quizzo.jpg">
+                    <div class="layer">
+                        <h3>Android Quiz App</h3>
+                        <p>An interactive quiz app for Android using Kotlin, featuring a user-friendly interface and engaging quiz questions to test and enhance users' knowledge.</p>
+                        <a href="https://github.com/SunetraBanerjee/Quizzo"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #a7a6f7;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="resize" src="images/android project.jpg">
+                    <div class="layer">
+                        <h3>Age In minutes App</h3>
+                        <p>Android application designed to calculate and display the total number of minutes you have been alive up to the present moment.</p>
+                        <a href="https://github.com/SunetraBanerjee/Age-In-Minutes"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #a7a6f7;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/SunetraBanerjee" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--------------------------Contact section--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope" style="color: #82a2d9;"></i>banerjeesunetra201001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #739ee8;"></i>(+91) 8250958217</p>
+                    <div class="social-icons">
+                        <a href="http://linkedin.com/in/sunetra-banerjee-b66481213"><i class="fa-brands fa-linkedin" style="color: #a8c4f5;"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sunetra. Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> by Sunetra Banerjee</p>
+    </div>
+
+
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+   </script>
+   
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcKsik8Cq6yyfzOCaYGD0YSfUPGS--ImZZ-4kkBB25JpRQlBILRVG-aHFcasqMla0v/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
